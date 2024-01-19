@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.seating-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.seat {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.booked {
+    background-color: red;
+    cursor: not-allowed;
+    color: white;
+}
+
+.available {
+    background-color: lightgreen;
+}
+
+.select-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
